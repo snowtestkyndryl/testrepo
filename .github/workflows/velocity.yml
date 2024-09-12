@@ -64,20 +64,15 @@ jobs:
                   "requested_by": {
                      "name": "test user"
                   },
-                 "start_date": "2021-09-12 14:00:00",
-                 "end_date": "2021-09-12 14:30:00"
+                 "start_date": "2024-09-12 14:00:00",
+                 "end_date": "2024-09-12 14:30:00"
                 }
               }
-
-  deploy-prod:
-    name: DeployProd
-      needs:snow-approval
-    runs-on: ubuntu-latest
-    steps:     
-       - uses: actions/checkout@v4
+              
+      - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-       - name: Run a prod script
-         run: echo Prod Deployed!
+      - name: Run a prod script
+        run: echo Prod Deployed!
 
          
