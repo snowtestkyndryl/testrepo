@@ -62,7 +62,7 @@ jobs:
                 "autoCloseChange" : true,
                 "attributes": {
                   "requested_by": {
-                     "name": "test user"
+                     "name": "andrzej.pawlus"
                   },
                  "start_date": "2024-09-12 14:00:00",
                  "end_date": "2024-09-12 14:30:00"
