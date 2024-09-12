@@ -36,15 +36,27 @@ jobs:
          run: echo Preprod Deployed!
 
   snow-approval:
-    name: SnowApproval
-      needs:deploy-dev
+  # jobs that must complete successfully before this job will run
+    needs: deploy-preprod
+  # type of machine to run the job on
     runs-on: ubuntu-latest
-    steps:     
-       - uses: actions/checkout@v4
+    name: ServiceNow DevOps Change
+    steps:
+      - name: ServiceNow Change
+        uses: ServiceNow/servicenow-devops-change@v3.0.0
+        with:
+        # Devops Integration Token
+          devops-integration-token: ${{ secrets.SN_DEVOPS_TOKEN }}
+        # ServiceNow Instance URL
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+        # Orchestration Tool Id
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+        # GitHub Context
+          context-github: ${{ toJSON(github) }}
+        # Display Name of the Job
+          job-name: 'ServiceNow DevOps Change'
+          change-request: '{"attributes":{"requested_by":{"name": "Test User"},"assignment_group":{"name": "Change Approval Team"},"priority": "2","comments": "This is a sample pipeline script to be added in your change step","work_notes": "Update this to work_notes","start_date": "2023-09-07 11:59:59","end_date": "2023-09-09 11:59:59"}}'
 
-      # Runs a single command using the runners shell
-       - name: Run a preprod script
-         run: echo Snow!
 
   deploy-prod:
     name: DeployProd
