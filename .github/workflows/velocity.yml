@@ -35,9 +35,20 @@ jobs:
        - name: Run a preprod script
          run: echo Preprod Deployed!
 
+  snow-approval:
+    name: SnowApproval
+      needs:deploy-dev
+    runs-on: ubuntu-latest
+    steps:     
+       - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+       - name: Run a preprod script
+         run: echo Snow!
+
   deploy-prod:
     name: DeployProd
-      needs:deploy-preprod
+      needs:snow-approval
     runs-on: ubuntu-latest
     steps:     
        - uses: actions/checkout@v4
