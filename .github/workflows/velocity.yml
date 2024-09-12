@@ -67,6 +67,7 @@ jobs:
                   "category": "DevOps",
                   "priority": "2",
                   "assigned_to": "800b174138d089c868d09de320f9833b",
+                  "assignment_group": "0a52d3dcd7011200f2d224837e6103f2",
                   "test_plan": "Automated Testing as part of pipeline process",
                   "chg_model": "adffaa9e4370211072b7f6be5bb8f2ed",
                   "description": "Spring Sale Catalogue Update 2024",
