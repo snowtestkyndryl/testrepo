@@ -77,7 +77,14 @@ jobs:
                   "end_date":"2024-09-12 16:30:00"
                 }
               }
-              
+
+  deploy-prod:
+  
+    needs: snow-approval
+    runs-on: ubuntu-latest
+    name: DeployProd
+    steps:
+    
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
