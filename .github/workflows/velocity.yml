@@ -58,7 +58,7 @@ jobs:
           job-name: 'ServiceNow DevOps Change'
           change-request: |
               {
-                "setCloseCode" : false,
+                "setCloseCode" : true,
                 "autoCloseChange" : true,
                 "attributes": {
                   "requested_by": {
