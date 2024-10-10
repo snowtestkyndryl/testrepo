@@ -59,7 +59,7 @@ jobs:
           change-request: |
               {
                 "autoCloseChange" : true,
-                "setCloseCode" : false,
+                "setCloseCode" : true,
                 "attributes": {
                   "requested_by": {
                      "name":"Andrzej Pawlus"
@@ -73,8 +73,8 @@ jobs:
                   "description": "Spring Sale Catalogue Update 2024",
                   "comments": "This is a sample pipeline script to be added in your change step",
                   "work_notes": "Somerandomtext",
-                  "start_date":"2024-10-10 13:10:00",
-                  "end_date":"2024-10-10 13:50:00"
+                  "start_date":"2024-10-10 13:30:00",
+                  "end_date":"2024-10-10 13:55:00"
                 }
               }
 
