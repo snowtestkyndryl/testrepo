@@ -72,7 +72,7 @@ jobs:
                   "chg_model": "adffaa9e4370211072b7f6be5bb8f2ed",
                   "description": "Spring Sale Catalogue Update 2024",
                   "comments": "This is a sample pipeline script to be added in your change step",
-                  "work_notes": "adding back Auto close Change False",
+                  "work_notes": "adding Auto close Change True2",
                   "start_date":"2024-10-10 13:10:00",
                   "end_date":"2024-10-10 13:50:00"
                 }
