@@ -6,8 +6,8 @@ name: ChangeVelocityTest
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  schedule:
-    - cron:  '15 2 * * 6'
+  #schedule:
+   # - cron:  '15 2 * * 6'
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -74,8 +74,8 @@ jobs:
                   "description": "Spring Sale Catalogue Update 2024",
                   "comments": "This is a sample pipeline script to be added in your change step",
                   "work_notes": "Somerandomtext",
-                  "start_date":"2024-10-26 02:30:00",
-                  "end_date":"2024-10-26 02:55:00"
+                  "start_date":"2024-10-25 14:00:00",
+                  "end_date":"2024-10-25 14:55:00"
                 }
               }
 
