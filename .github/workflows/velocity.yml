@@ -74,8 +74,8 @@ jobs:
                   "description": "Spring Sale Catalogue Update 2024",
                   "comments": "This is a sample pipeline script to be added in your change step",
                   "work_notes": "Somerandomtext",
-                  "start_date":"2024-10-25 14:30:00",
-                  "end_date":"2024-10-25 14:55:00"
+                  "start_date":"2024-10-28 13:00:00",
+                  "end_date":"2024-10-28 14:00:00"
                 }
               }
 
